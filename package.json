@@ -1,23 +1,33 @@
 {
-  "name": "demoproj",
+  "name": "hostelbooking",
   "version": "1.0.0",
-  "description": "social network",
+  "description": "hostel booking for students",
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "prashanth",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.5.0",
     "config": "^3.3.1",
     "express": "^4.17.1",
     "express-validator": "^6.4.1",
+    "gravatar": "^1.8.0",
     "gravator": "^1.0.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.14",
-    "request": "^2.88.2"
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-script-tag": "^1.1.2",
+    "request": "^2.88.2",
+    "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
