@@ -28,11 +28,12 @@ router.post(
     [
       check('firstName', 'First Name is required').not().isEmpty(),
       check('lastName', 'Last Name is required').not().isEmpty(),
-      check('collegeName', 'collegeName is required').not().isEmpty(),
-      check('rollNo', 'rollNo is required').not().isEmpty(),
-      check('yearofStudy', 'year of Study is required').not().isEmpty(),
+      check('collegeName', 'CollegeName is required').not().isEmpty(),
+      check('rollNo', 'RollNo is required').not().isEmpty(),
+      check('yearofStudy', 'Year of Study is required').not().isEmpty(),
       check('branch', 'branch is required').not().isEmpty(),
-      check('contact', 'contact is required').not().isEmpty(),
+      check('phone', 'Phone is required').not().isEmpty(),
+      check('location', 'Location is required').not().isEmpty(),
     ],
   ],
   async (req, res) => {
@@ -40,7 +41,10 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ error: errors.array() });
     }
-
+    /*const nameoftheHostel = hostelName;
+    const floorNumber = floorNo;
+    const roomNumber = roomNo;
+    const bedNumber = bedNo;*/
     const {
       firstName,
       lastName,
@@ -48,7 +52,13 @@ router.post(
       rollNo,
       yearofStudy,
       branch,
-      contact,
+      phone,
+      location,
+      nameoftheHostel,
+      floorNumber,
+      roomNumber,
+      bedNumber,
+      cost,
     } = req.body;
 
     const profileyears = {};
@@ -59,7 +69,13 @@ router.post(
     if (rollNo) profileyears.rollNo = rollNo;
     if (yearofStudy) profileyears.yearofStudy = yearofStudy;
     if (branch) profileyears.branch = branch;
-    if (contact) profileyears.branch = contact;
+    if (phone) profileyears.phone = phone;
+    if (location) profileyears.location = location;
+    if (nameoftheHostel) profileyears.nameoftheHostel = nameoftheHostel;
+    if (floorNumber) profileyears.floorNumber = floorNumber;
+    if (roomNumber) profileyears.roomNumber = roomNumber;
+    if (bedNumber) profileyears.roomNumber = bedNumber;
+    if (cost) profileyears.cost = cost;
     try {
       let profile = await Profile.findOne({ user: req.user.id });
       if (profile) {

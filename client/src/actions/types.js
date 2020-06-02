@@ -10,3 +10,7 @@ export const LOGOUT = 'LOGOUT';
 export const GET_PROFILE = 'GET_PROFILE';
 export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 export const PROFILE_ERROR = 'PROFILE_ERROR';
+export const STORE_PROFILE_1 = 'STORE_PROFILE_1';
+export const STORE_PROFILE_2 = 'STORE_PROFILE_2';
+export const STORE_PROFILE_3 = 'STORE_PROFILE_3';
+export const STORE_PROFILE_4 = 'STORE_PROFILE_4';

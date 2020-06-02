@@ -28,6 +28,26 @@ const ProfileSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  phone: {
+    type: String,
+    required: true,
+  },
+  location: {
+    type: String,
+    required: true,
+  },
+  nameoftheHostel: {
+    type: String,
+  },
+  floorNumber: {
+    type: String,
+  },
+  roomNumber: {
+    type: String,
+  },
+  bedNumber: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now,

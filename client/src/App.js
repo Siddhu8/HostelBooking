@@ -7,8 +7,10 @@ import Register from './components/auth/Register';
 import Alert from './components/layout/alert';
 import './App.css';
 import Dashboard from './components/dashboard/Dashboard';
+import myProfile from './components/profile/myProfile';
 import PrivateRoute from './components/routing/PrivateRoute';
 import HostelFloors from './components/hosteldesc/HostelFloors';
+import ProfilePage from './components/profilepage/ProfilePage';
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -36,11 +38,13 @@ const App = () => {
               <Route exact path='/register' component={Register} />
               <Route exact path='/login' component={Login} />
               <PrivateRoute exact path='/dashboard' component={Dashboard} />
+              {/*<PrivateRoute exact path='/myprofile' component={myProfile} />*/}
               <PrivateRoute
                 exact
                 path='/hostelfloors'
                 component={HostelFloors}
               />
+              <PrivateRoute exact path='/profilepage' component={ProfilePage} />
             </Switch>
           </section>
         </Fragment>

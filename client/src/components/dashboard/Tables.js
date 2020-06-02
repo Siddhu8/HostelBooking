@@ -18,31 +18,31 @@ export const Tables = (auth) => (
     <Table.Body>
       <Table.Row>
         <Table.Cell>1st Year</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>6</Table.Cell>
+        <Table.Cell>2</Table.Cell>
+        <Table.Cell>1</Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>2nd Year</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
+        <Table.Cell>4</Table.Cell>
+        <Table.Cell>5</Table.Cell>
+        <Table.Cell>1</Table.Cell>
         <Table.Cell>0</Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>3rd Year</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
+        <Table.Cell>4</Table.Cell>
+        <Table.Cell>2</Table.Cell>
+        <Table.Cell>2</Table.Cell>
+        <Table.Cell>1</Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>4th Year</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
-        <Table.Cell>0</Table.Cell>
+        <Table.Cell>5</Table.Cell>
+        <Table.Cell>1</Table.Cell>
+        <Table.Cell>5</Table.Cell>
+        <Table.Cell>3</Table.Cell>
       </Table.Row>
     </Table.Body>
   </Table>
