@@ -15,7 +15,7 @@ app.use('/api/posts', require('./routes/api/posts'));
 app.use('/api/profile', require('./routes/api/profile'));
 //app.use('/api/profile/me',require(./routes/api/))
 
-Serving static assests in production
+//Serving static assests in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 
